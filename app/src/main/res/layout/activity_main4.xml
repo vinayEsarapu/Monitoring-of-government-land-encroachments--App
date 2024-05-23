@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back242">
+
+
+    <Button
+        android:id="@+id/mybutton"
+
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginEnd="450dp"
+        android:layout_marginBottom="450dp"
+        android:backgroundTint="#FFEB3B"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Back"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#050505"
+        android:textSize="20sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="24dp"
+
+            android:textStyle="bold">
+
+            <!-- Table header row -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75sp">
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="ID"
+                    android:textColor="#090909"
+                    android:textColorHint="#070707"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="2"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    android:text="District"
+                    android:textColor="#050505"
+                    android:textColorHint="#050505"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:background="#8BC34A"
+
+
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Mandal"
+                    android:textColor="#070707"
+                    android:textColorHint="#050505"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Village"
+                    android:textColor="#090909"
+                    android:textColorHint="#070707"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="SurveyNumber"
+                    android:textColor="#070707"
+                    android:textColorHint="#070707"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Date"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Time"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="IsLandEncroached"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="EncroacherName"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="IdProof"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="TypeOfEncroachment"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="EncroachmentSince_date"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="ImageBitmap"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Latitude"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Longitude"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+
+
+                    android:background="#8BC34A"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Address"
+                    android:textColor="#070707"
+                    android:textColorHint="#020202"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/row">
+
+
+                </TableRow>
+
+            </ScrollView>
+
+
+
+
+
+        </TableLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>
+

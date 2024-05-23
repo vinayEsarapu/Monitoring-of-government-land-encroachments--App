@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back242"
+    android:contentDescription="@string/scrollable_area_for_the_form"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity3">
+
+
+    <EditText
+            android:id="@+id/districtbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="District"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="#0B0A0A"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/mandalbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#070707"
+            android:ems="10"
+            android:hint="Mandal"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:shadowColor="#0B0A0A"
+            android:textColor="#090909"
+            android:textColorHint="#0C0C0C"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/districtbutton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/districtbutton"
+            app:layout_constraintTop_toBottomOf="@+id/districtbutton" />
+
+        <EditText
+            android:id="@+id/villagebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="Village"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#0C0C0C"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/mandalbutton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/mandalbutton"
+            app:layout_constraintTop_toBottomOf="@+id/mandalbutton" />
+
+        <EditText
+            android:id="@+id/surveybutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Survey Number"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#070707"
+            android:textColorHint="#090909"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/villagebutton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/villagebutton"
+            app:layout_constraintTop_toBottomOf="@+id/villagebutton" />
+
+        <EditText
+            android:id="@+id/datebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="#090909"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#0E0E0E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/surveybutton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/surveybutton"
+            app:layout_constraintTop_toBottomOf="@+id/surveybutton" />
+
+
+        <EditText
+            android:id="@+id/dateandtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#090909"
+            android:ems="10"
+            android:hint="Time"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#0E0E0E"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/datebutton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/datebutton"
+            app:layout_constraintTop_toBottomOf="@+id/datebutton" />
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="400dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10sp"
+            android:text="   IS LAND ENCROACHED ?(Yes/No)"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#070707"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/encroachedLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateandtime"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <Button
+            android:id="@+id/yesbutton"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="#FFEB3B"
+
+            android:gravity="center"
+
+            android:text="Yes"
+            android:textColorHint="#070707"
+
+
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/save"
+            app:layout_constraintEnd_toStartOf="@+id/nobutton"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateandtime"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <Button
+            android:id="@+id/nobutton"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="28dp"
+
+            android:backgroundTint="#FFEB3B"
+            android:gravity="center"
+            android:text="No"
+
+            android:textColorHint="#070707"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yesbutton"
+            app:layout_constraintTop_toTopOf="@+id/yesbutton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/encroachedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nobutton"
+            tools:visibility="gone">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint=" Name Of Encroacher"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/yesbutton"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint=" ID Proof"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint="Type Of Encroachment"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/since"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint=" Encroachment Since (date)"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/type"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/takepicture"
+                android:layout_width="255dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="200dp"
+                android:backgroundTint="#CDDC39"
+                android:lineSpacingExtra="10sp"
+                android:text="Take Picture"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/since"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/userlocation"
+                android:layout_width="253dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="200dp"
+                android:backgroundTint="#FF9800"
+                android:lineSpacingExtra="10sp"
+                android:text="UserLocation"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint="Latitude"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint="Longitude"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#090909"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0E0E0E"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="350dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#FFC107"
+            android:lineSpacingExtra="10sp"
+            android:text="save"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/encroachedLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
